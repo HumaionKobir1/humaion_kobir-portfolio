@@ -271,12 +271,12 @@ body{
 .skills .skills-row{
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 3rem;
     justify-content: space-between;
 }
 
 .skills-column{
-    width: 45%;
+    width: 46%;
 }
 
 .skills-column .title{
@@ -291,9 +291,34 @@ body{
     border-radius: .6rem;
     padding: .5rem 1rem;
 }
-.skills-content .progress {
-    padding: 1rem 0;
+ .progress {
+    padding: .3rem;
+    border: 2px solid var(--main-color);
+    margin: 20px 5px;
+    border-radius: 10px;
+    background: var(--bg-color);
+    position: relative;
+    overflow: hidden;
+    
 }
+
+
+.progress::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+
+}
+.progress:hover::before{
+    width: 100%;
+}
+
 
 .skills-content .progress h3{
     font-size: 1.0rem;
@@ -313,4 +338,44 @@ body{
 }
 
 
-
+.skills-content .progress .bar span{
+    display: block;
+    height: 100%;
+    border-radius:  .3rem;
+    background: var(--main-color);
+}
+.bx{
+    border: 2px solid var(--main-color);
+    border-radius: 100%;
+    padding: 5px;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
+    width: 75%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
+    width: 65%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
+    width: 70%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span{
+    width: 55%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span{
+    width: 80%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
+    width: 50%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span{
+    width: 65%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span{
+    width: 45%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span{
+    width: 50%;
+}
