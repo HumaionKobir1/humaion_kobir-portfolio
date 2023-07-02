@@ -29,6 +29,22 @@ body{
     text-decoration: none;
 }
 
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    z-index: 100;
+    transition: .3s;
+}
+
+.header.sticky{
+    background: var(--bg-color);
+}
 .navbar a {
     font-size: 1.3rem;
     color: var(--text-color);
@@ -46,6 +62,7 @@ body{
     background: url('/images/home.png');
     background-size: cover;
     background-position: center;
+    margin-top: 100px;
 }
 
 .home-content{
@@ -168,12 +185,12 @@ body{
 }
 
 .home-sci a:hover::before{
-    width: 100%;
+    width: 80%;
 }
 
 .home-imgHover{
     position: absolute;
-    top: 0;
+    top: 100px;
     right: 0;
     width: 39%;
     height: 100%;
@@ -290,7 +307,26 @@ body{
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
     padding: .5rem 1rem;
+    z-index: 1;
+    overflow: hidden;
 }
+
+.skills-box .skills-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.skills-box .skills-content:hover::before{
+    width: 100%;
+}
+
  .progress {
     padding: .3rem;
     border: 2px solid var(--main-color);
@@ -378,4 +414,50 @@ body{
 }
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span{
     width: 50%;
+}
+
+
+.footer{
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);    
+}
+
+
+.footer-iconTop a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+.footer-iconTop a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+.footer-iconTop a:hover::before{
+    width: 100%;
+}
+
+.footer-iconTop a i{
+    font-size: 2.0rem;
+    color: var(--text-color);
+    transition: .5s;
+}
+.footer-iconTop a:hover{
+    color: var(--main-color);
 }

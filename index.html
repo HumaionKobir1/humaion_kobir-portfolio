@@ -8,222 +8,243 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class=''>
-        <div class='header md:px-28 px-5 md:py-8  top-0 left-0 w-full flex justify-between items-center'>
-            <a class='logo' href="#">Portfolio</a>
+<body id="home">
+    <header class='header  md:px-28 px-5 md:py-8 '>
+        <a class='logo' href="#">Portfolio</a>
 
-            <div class='hidden'>
-                <FaBars></FaBars>
-            </div>
-
-            <nav class='navbar'>
-                <a href="#home" class='active'>Home</a>
-                <a href="#about">About</a>
-                <a href="#education">Education</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </nav>
+        <div class='hidden'>
+            <FaBars></FaBars>
         </div>
 
-        <div class='home md:px-28 px-5 md:py-8  h-[80vh] flex items-center'>
-            <div class="home_section mt-10">
-                <div class="">
-                    <div class='home-content'>
-                        <h1 >Hi, I'm <span>Humaion Kobir</span> </h1>
-                        <div class="text-animate">
-                            <h3>Frontend Developer</h3>
-                        </div>
-                        <p>I'm a web developer with a focus on the MERN stack, but still exploring other technologies and frameworks that catch my interest! if you're looking for a developer to add to your team, I'd love to hear from you</p>
+        <nav class='navbar'>
+            <a href="#home" class='active'>Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-                        <div  class="btn-box">
-                            <a class="btn" href="#">Download Resume</a>
-                            <a class="btn" href="#">Let's Talk</a>
+    <section class='home md:px-28 px-5 md:py-8  h-[80vh] flex items-center'>
+        <div class="home_section mt-10">
+            <div class="">
+                <div class='home-content'>
+                    <h1 >Hi, I'm <span>Humaion Kobir</span> </h1>
+                    <div class="text-animate">
+                        <h3>Frontend Developer</h3>
+                    </div>
+                    <p>I'm a web developer with a focus on the MERN stack, but still exploring other technologies and frameworks that catch my interest! if you're looking for a developer to add to your team, I'd love to hear from you</p>
+
+                    <div  class="btn-box">
+                        <a class="btn" href="#">Download Resume</a>
+                        <a class="btn" href="#">Let's Talk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class='md:px-28 px-5 md:py-8'>
+        <div class='home-sci  absolute bottom-11 w-44 flex justify-between'>
+            <a href="#" class='bx bxl-facebook'> <i class='bx bxl-facebook-circle' ></i> </a>
+            <a href="#" class='bx bxl-linkedIn'> <i class='bx bxl-linkedin-square' ></i> </a>
+            <a href="#" class='bx bxl-github'> <i class='bx bxl-github' ></i> </a>
+        </div>
+    </div>
+
+    <div class='home-imgHover '></div>
+    
+    <!-- about section -->
+    <div class='md:px-28 px-5 md:py-8 about' id="about">
+        <h2 class='text-4xl mb-12 text-center font-bold'>About <span class='me'>Me</span></h2>
+        <div class='about-img relative w-96 h-96 rounded-full flex justify-center items-center'>
+            <img class='w-[85%] rounded-full border-2' src='/images/about.png' alt="" />
+            <span class='circle-spin '></span>
+        </div>
+        <div class="about-content text-center">
+            <h3 class='text-2xl font-bold mb-5'>Frontend Developer!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam soluta sunt numquam, nostrum fuga reprehenderit tenetur perspiciatis deleniti rerum esse commodi doloribus ad. Quisquam a numquam soluta eaque veniam nemo ipsum, rem iusto, consequatur distinctio doloremque ad tenetur minima consequuntur repudiandae magni possimus autem sint porro, reiciendis necessitatibus saepe itaque ipsam laudantium. Quae obcaecati id eum dolorum cum voluptatum fuga adipisci perspiciatis? Eveniet laudantium aperiam voluptatem at culpa, tempora et recusandae, officia alias nam laboriosam ullam placeat quisquam nostrum quibusdam odio, a voluptas nemo dicta facilis. Iure, repellendus ipsam? Porro, sit ullam vero nihil voluptate ducimus sint omnis soluta rerum?</p>
+
+            <div class='flex justify-center mt-5'>
+                <div class='btn-box btns'>
+                    <a href="#"class='btn'>Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- EDUCATION SECTION -->
+    <div class='education md:px-28 px-5 md:py-8 flex justify-center items-center pb-20' id="education">
+        <h1 class='text-4xl mb-12 text-center font-bold'>My <span class="me">Projects</span></h1>
+        <div class='education-row flex gap-7'>
+            <div class='education-column'>
+                <h3 class='text-3xl font-bold text-center mb-5'>My Journey</h3>
+                <div class='education-box'>
+                    <div class='education-content'>
+                        <div class='content'>
+                            <div class='year text-lg font-semibold'> <FaCalendarAlt></FaCalendarAlt> 2019 - Continue</div>
+                            <h3>Bachelor Degree - University</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsam nihil aperiam inventore soluta earum ipsum itaque architecto culpa tempora.</p>
+                        </div>
+                    </div>
+
+                    <div class='education-content'>
+                        <div class='content'>
+                            <div class='year text-lg font-semibold'> <FaCalendarAlt></FaCalendarAlt> 2016 - 2018</div>
+                            <h3>Bachelor Degree - University</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsam nihil aperiam inventore soluta earum ipsum itaque architecto culpa tempora.</p>
+                        </div>
+                    </div>
+
+                    <div class='education-content'>
+                        <div class='content'>
+                            <div class='year text-lg font-semibold'> <FaCalendarAlt></FaCalendarAlt> 2014 - 2016</div>
+                            <h3>Bachelor Degree - University</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsam nihil aperiam inventore soluta earum ipsum itaque architecto culpa tempora.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class='education-column'>
+                <h3 class='text-3xl font-bold text-center mb-5'>My Experience</h3>
+                <div class='education-box'>
+                    <div class='education-content'>
+                        <div class='content'>
+                            <div class='year text-lg font-semibold'> <FaCalendarAlt></FaCalendarAlt> 2019 - Continue</div>
+                            <h3>Bachelor Degree - University</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsam nihil aperiam inventore soluta earum ipsum itaque architecto culpa tempora.</p>
+                        </div>
+                    </div>
+
+                    <div class='education-content'>
+                        <div class='content'>
+                            <div class='year text-lg font-semibold'> <FaCalendarAlt></FaCalendarAlt> 2016 - 2018</div>
+                            <h3>Bachelor Degree - University</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsam nihil aperiam inventore soluta earum ipsum itaque architecto culpa tempora.</p>
+                        </div>
+                    </div>
+
+                    <div class='education-content'>
+                        <div class='content'>
+                            <div class='year text-lg font-semibold'> <FaCalendarAlt></FaCalendarAlt> 2014 - 2016</div>
+                            <h3>Bachelor Degree - University</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsam nihil aperiam inventore soluta earum ipsum itaque architecto culpa tempora.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class='md:px-28 px-5 md:py-8'>
-            <div class='home-sci  absolute bottom-11 w-44 flex justify-between'>
-                <a href="#" class='bx bxl-facebook'> <i class='bx bxl-facebook-circle' ></i> </a>
-                <a href="#" class='bx bxl-linkedIn'> <i class='bx bxl-linkedin-square' ></i> </a>
-                <a href="#" class='bx bxl-github'> <i class='bx bxl-github' ></i> </a>
-            </div>
-        </div>
-
-        <div class='home-imgHover '></div>
-        
-        <!-- about section -->
-        <div class='md:px-28 px-5 md:py-8 about'>
-            <h2 class='text-4xl mb-12 text-center font-bold'>About <span class='me'>Me</span></h2>
-            <div class='about-img relative w-96 h-96 rounded-full flex justify-center items-center'>
-                <img class='w-[85%] rounded-full border-2' src='/images/about.png' alt="" />
-                <span class='circle-spin '></span>
-            </div>
-            <div class="about-content text-center">
-                <h3 class='text-2xl font-bold mb-5'>Frontend Developer!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam soluta sunt numquam, nostrum fuga reprehenderit tenetur perspiciatis deleniti rerum esse commodi doloribus ad. Quisquam a numquam soluta eaque veniam nemo ipsum, rem iusto, consequatur distinctio doloremque ad tenetur minima consequuntur repudiandae magni possimus autem sint porro, reiciendis necessitatibus saepe itaque ipsam laudantium. Quae obcaecati id eum dolorum cum voluptatum fuga adipisci perspiciatis? Eveniet laudantium aperiam voluptatem at culpa, tempora et recusandae, officia alias nam laboriosam ullam placeat quisquam nostrum quibusdam odio, a voluptas nemo dicta facilis. Iure, repellendus ipsam? Porro, sit ullam vero nihil voluptate ducimus sint omnis soluta rerum?</p>
-
-                <div class='flex justify-center mt-5'>
-                    <div class='btn-box btns'>
-                        <a href="#"class='btn'>Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 
 
-        <!-- EDUCATION SECTION -->
-        <div class='education md:px-28 px-5 md:py-8 flex justify-center items-center pb-20'>
-            <div class='education-row flex gap-7'>
-                <div class='education-column'>
-                    <h3 class='text-3xl font-bold text-center mb-5'>My Journey</h3>
-                    <div class='education-box'>
-                        <div class='education-content'>
-                            <div class='content'>
-                                <div class='year text-lg font-semibold'> <FaCalendarAlt></FaCalendarAlt> 2019 - Continue</div>
-                                <h3>Bachelor Degree - University</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsam nihil aperiam inventore soluta earum ipsum itaque architecto culpa tempora.</p>
-                            </div>
-                        </div>
-
-                        <div class='education-content'>
-                            <div class='content'>
-                                <div class='year text-lg font-semibold'> <FaCalendarAlt></FaCalendarAlt> 2016 - 2018</div>
-                                <h3>Bachelor Degree - University</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsam nihil aperiam inventore soluta earum ipsum itaque architecto culpa tempora.</p>
-                            </div>
-                        </div>
-
-                        <div class='education-content'>
-                            <div class='content'>
-                                <div class='year text-lg font-semibold'> <FaCalendarAlt></FaCalendarAlt> 2014 - 2016</div>
-                                <h3>Bachelor Degree - University</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsam nihil aperiam inventore soluta earum ipsum itaque architecto culpa tempora.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class='education-column'>
-                    <h3 class='text-3xl font-bold text-center mb-5'>My Experience</h3>
-                    <div class='education-box'>
-                        <div class='education-content'>
-                            <div class='content'>
-                                <div class='year text-lg font-semibold'> <FaCalendarAlt></FaCalendarAlt> 2019 - Continue</div>
-                                <h3>Bachelor Degree - University</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsam nihil aperiam inventore soluta earum ipsum itaque architecto culpa tempora.</p>
-                            </div>
-                        </div>
-
-                        <div class='education-content'>
-                            <div class='content'>
-                                <div class='year text-lg font-semibold'> <FaCalendarAlt></FaCalendarAlt> 2016 - 2018</div>
-                                <h3>Bachelor Degree - University</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsam nihil aperiam inventore soluta earum ipsum itaque architecto culpa tempora.</p>
-                            </div>
-                        </div>
-
-                        <div class='education-content'>
-                            <div class='content'>
-                                <div class='year text-lg font-semibold'> <FaCalendarAlt></FaCalendarAlt> 2014 - 2016</div>
-                                <h3>Bachelor Degree - University</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsam nihil aperiam inventore soluta earum ipsum itaque architecto culpa tempora.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- skills -->
-        <div class="skills md:px-28 px-5 md:py-8" id="skills">
-            <h2 class="text-4xl mb-12 text-center font-bold">My <span class="me">Skills</span></h2>
-            <div class="skills-row ">
-                <div class="skills-column">
-                    <h3 class="title text-center">Expertise:</h3>
-                    <div class="skills-box">
-                        <div class="skills-content">
-                            <div class="progress drop-shadow-md">
-                                <h3>HTML <i class='bx bxl-html5'></i></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-
-                            <div class="progress">
-                                <h3>CSS <i class='bx bxl-css3' ></i> </h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-
-                            <div class="progress">
-                                <h3>JavaScript <i class='bx bxl-javascript' ></i> </h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-
-                            <div class="progress">
-                                <h3>React JS <i class='bx bxl-react'></i> </h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-                             
-                            <div class="progress">
-                                <h3>Tailwind CSS <i class='bx bxl-tailwind-css' ></i> </h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-
-                            <div class="progress">
-                                <h3>Bootstrap <i class='bx bxl-bootstrap' ></i> </h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-                                                        
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills-column">
-                    <h3 class="title text-center">Comfortable:</h3>
-                    <div class="skills-box">
-                        <div class="skills-content">
-
-                            <div class="progress">
-                                <h3>Firebase <i class='bx bxl-firebase' ></i></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-
-                            <div class="progress">
-                                <h3>MongoDB <i class='bx bxl-mongodb'></i></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-
-                            <div class="progress">
-                                <h3>Express <i class='bx bxl-nodejs' ></i></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-                            
-                            <div class="progress">
-                                <h3>Node.js <i class='bx bxl-nodejs' ></i></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-                        </div>
-                        
-                        <h1></h1>
-                        
-                        <div class="progress">
-                            <h3>Figma <i class='bx bxl-firebase' ></i></h3>
+    <!-- skills -->
+    <div class="skills md:px-28 px-5 md:py-8" id="skills">
+        <h2 class="text-4xl mb-12 text-center font-bold">My <span class="me">Skills</span></h2>
+        <div class="skills-row ">
+            <div class="skills-column">
+                <h3 class="title text-center">Expertise:</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress drop-shadow-md">
+                            <h3>HTML <i class='bx bxl-html5'></i></h3>
                             <div class="bar"><span></span></div>
                         </div>
 
+                        <div class="progress">
+                            <h3>CSS <i class='bx bxl-css3' ></i> </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>JavaScript <i class='bx bxl-javascript' ></i> </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>React JS <i class='bx bxl-react'></i> </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                         
+                        <div class="progress">
+                            <h3>Tailwind CSS <i class='bx bxl-tailwind-css' ></i> </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Bootstrap <i class='bx bxl-bootstrap' ></i> </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                                                    
                     </div>
                 </div>
             </div>
+
+            <div class="skills-column">
+                <h3 class="title text-center">Comfortable:</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+
+                        <div class="progress">
+                            <h3>Firebase <i class='bx bxl-firebase' ></i></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>MongoDB <i class='bx bxl-mongodb'></i></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Express <i class='bx bxl-nodejs' ></i></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        
+                        <div class="progress">
+                            <h3>Node.js <i class='bx bxl-nodejs' ></i></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                    
+                    <h1 class="text-3xl text-center mt-10 mb-5">Tools</h1>
+                    
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="flex justify-center items-center">
+                                <div class="progress text-center">
+                                    <h3 >Figma for Design </h3>
+                                </div>
+                                <div class="progress text-center">
+                                    <h3>Git </h3>
+                                </div>
+                                <div class="progress text-center">
+                                    <h3>Chrome Dev tools for debugging </h3>
+                                </div>
+                                <div class="progress text-center">
+                                    <h3>Netlify </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-
-
-       
     </div>
+
+    <!-- Footer area -->
+    <div class="footer flex justify-between items-center">
+        <div class="footer-text">
+            <p class="text-sm">Copyright &copy; 2023 by Humaion Kobir | All Right Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#"><i class="bx bx-up-arrow-alt"></i> </a>
+        </div>
+    </div>
+
 
     <script src="script.js"></script>
 </body>
