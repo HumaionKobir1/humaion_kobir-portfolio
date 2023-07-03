@@ -15,6 +15,7 @@
 
 }
 
+
 body{
     background: var(--bg-color);
     color: var(--text-color);
@@ -53,9 +54,17 @@ body{
     text-decoration: none;
     transition: .3s;
 }
+
 .navbar a:hover,
 .navbar a.active {
     color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 2.0rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
 }
 
 .home{
@@ -153,6 +162,13 @@ body{
     width: 100%;
 }
 
+.home-sci{
+    position: absolute;
+    bottom: 4rem;
+    image-rendering: 170px;
+    display: flex;
+    justify-content: space-between;
+}
 .home-sci a{
     position: relative;
     display: inline-flex;
@@ -233,7 +249,18 @@ body{
     border-right: .2rem solid var(--main-color);
 }
 
+.eduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
 
+/* .education .education-row{
+    display: flex;
+    gap: 5rem;
+} */
 .education-column .education-box{
     border-left: .2rem solid var(--main-color);
 }
@@ -287,8 +314,7 @@ body{
 }
 .skills .skills-row{
     display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2rem;
     justify-content: space-between;
 }
 
@@ -417,6 +443,79 @@ body{
 }
 
 
+.contact{
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .input-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box .input-field{
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea{
+    width: 100%;
+    height: 100%;
+    font-size: 1.3rem;
+    padding: 1.2rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .5rem;
+    border: .2rem solid var(--main-color);
+}
+
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder{
+    color: var(--text-color);
+}
+
+.contact form .focus{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    border-radius: .6rem;
+    z-index: -1;
+    transition: .5s;
+}
+
+.contact form .textarea-field{
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+
+.contact form .textarea-field textarea{
+    resize: none;
+}
+
+.contact form .input-box .input-field input:focus~.focus,
+.contact form .input-box .input-field input:valid~.focus,
+.contact form .textarea-field textarea:focus~.focus,
+.contact form .textarea-field textarea:valid~.focus{
+    width: 100%;
+}
+.contact form .btn-box.btns .btn{
+    cursor: pointer;
+}
+
+
 .footer{
     flex-wrap: wrap;
     padding: 2rem 9%;
@@ -461,3 +560,83 @@ body{
 .footer-iconTop a:hover{
     color: var(--main-color);
 }
+
+
+/* BREAKPOINTS  */
+/* @media (max-width: 1200px) {
+    html{
+        font-size: 55%;
+    }
+} */
+
+@media (max-width: 991px) {
+    .header{
+        padding: 2rem 4%;
+    }
+
+    section{
+        padding: 10rem 4% 2rem;
+    }
+    .home{
+        padding: 0 4%;
+    }
+    .footer {
+        padding: 2rem 4%;
+    }
+}
+
+@media (max-width: 768px){
+    .header{
+        background: var(--bg-color)
+    }
+    #menu-icon{
+        display: block;
+    }
+    .home{
+        background: none;
+        
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 2rem 4%;
+        z-index: -1;
+        background: var(--main-color);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        transition: .25s ease;
+        transition-delay: .25s;
+    }
+    .navbar.active{
+        left: 0;
+        transition-delay: 0s;
+    }
+    .navbar .active-nav{
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+    .navbar.active .active-nav{
+        transition-delay: .25s;
+        left: 0;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.2rem;
+        margin: 2rem 0;
+    }
+    .navbar.active a{
+        transform: translateX(0);
+        transition-delay: .25s;
+    }
+}
+
+
