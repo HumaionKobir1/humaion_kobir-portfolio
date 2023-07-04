@@ -91,6 +91,8 @@ body{
     max-width: 57rem;
 }
 .home-content h1{
+    position: relative;
+    display: inline-block;
     font-size: 3.6rem;
     font-weight: 700;
     line-height: 1.0;
@@ -110,9 +112,12 @@ body{
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-position: 31rem 0;
+    
+    
+}
+.home.show-animate .home-content .text-animate h3{
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
-    
 }
 
 .home-content .text-animate h3::before{
@@ -265,6 +270,7 @@ body{
     padding: 10rem 9% 2rem;
 }
 .heading{
+    position: relative;
     font-size: 4rem;
     margin-bottom: 3rem;
     text-align: center;
@@ -309,9 +315,12 @@ body{
 }
 
 .about-content h3{
+    position: relative;
+    display: inline-block;
     font-size: 2.5rem;
 }
 .about-content p {
+    position: relative;
     font-size: 1.2rem;
     margin: 2rem 0 3rem;
 }
@@ -344,6 +353,7 @@ body{
     gap: 5rem;
 }
 .education-column .education-box{
+    position: relative;
     border-left: .2rem solid var(--main-color);
 }
 
@@ -352,6 +362,8 @@ body{
 }
 
 .education-column .title{
+    position: relative;
+    display: inline-block;
     font-size: 2.5rem;
     margin: 0 0 1.5rem 2rem;
 }
@@ -384,7 +396,17 @@ body{
     font-size: 2rem;
 }
 
+.cart-image-container {
+    overflow: hidden;
+    position: relative;
+  }
 
+.cart-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+    animation: scrollImage 20s linear infinite;
+  }
 
 .education-box .education-content::before{
     content: '';
@@ -423,6 +445,11 @@ body{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
+.skills h2{
+    display: inline-block;
+    left: 50%;
+    transform: translate(-50%);
+}
 .skills .skills-row{
     display: flex;
     gap: 2rem;
@@ -432,9 +459,13 @@ body{
     flex: 1 1 40rem;
 }
 
-
+.skills-column .skills-box{
+    position: relative;
+}
 
 .skills-column .title{
+    position: relative;
+    display: inline-block;
     font-size: 2rem;
     margin: 0 0 1.5rem;
 }
@@ -556,11 +587,17 @@ body{
 
 .contact{
     min-height: auto;
-    padding-bottom: 7rem;
+    min-height: 80vh;
+    padding: 7rem 6% 1rem;
     
 }
+.contact h2{
+    display: inline-block;
+    left: 50%;
+    transform: translate(-50%);
+}
 .contact form{
-    max-width: 70rem;
+    max-width: 60rem;
     margin: 0 auto;
     text-align: center;
 }
@@ -575,15 +612,15 @@ body{
 .contact form .input-box .input-field{
     position: relative;
     width: 49%;
-    margin: .8rem 0;
+    margin: .7rem 0;
 }
 
 .contact form .input-box .input-field input,
 .contact form .textarea-field textarea{
     width: 100%;
     height: 100%;
-    font-size: 1.3rem;
-    padding: 1.2rem;
+    font-size: 1.1rem;
+    padding: .8rem;
     color: var(--text-color);
     background: transparent;
     border-radius: .5rem;
@@ -611,10 +648,12 @@ body{
     position: relative;
     margin: .8rem 0 2.7rem;
     display: flex;
+    height: 300px;
 }
 
 .contact form .textarea-field textarea{
     resize: none;
+    
 }
 
 .contact form .input-box .input-field input:focus~.focus,
@@ -686,11 +725,29 @@ body{
     right: 0;
     width: 100%;
     height: 100%;
-    background: yellowgreen;
+    background: var(--bg-color);
     z-index: 98;
 }
 .animate.home-img{
     width: 50%;
+}
+.animate.scroll{
+    transition: 1s ease;
+    transition-delay: calc(.1s / var(--i));
+    animation: none;
+}
+
+.education .education-box .animate.scroll{
+    width: 105%;
+}
+
+
+.about.show-animate .animate.scroll, 
+.education.show-animate .animate.scroll,
+.skills.show-animate .animate.scroll,
+.contact.show-animate .animate.scroll{
+    transition-delay: calc(.1s * var(--i));
+    width: 0;
 }
 
 .logo .animate,
@@ -698,7 +755,7 @@ body{
 #menu-icon .animate,
 .home.show-animate .animate{
     animation: showRight 1s ease forwards;
-    animation-delay: calc(.3s * var(--i));
+    animation-delay: calc(.1s * var(--i));
 }
 
 /* BREAKPOINTS  */
@@ -870,5 +927,15 @@ body{
         width: 0;
     }
 }
+
+@keyframes scrollImage {
+    0% {
+      transform: translateY(0%);
+    }
+
+    100% {
+      transform: translateY(-100%);
+    }
+  }
 
 
