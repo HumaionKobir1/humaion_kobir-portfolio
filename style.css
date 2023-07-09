@@ -332,6 +332,35 @@ body{
     background: var(--second-bg-color);
 }
 
+.services{
+    padding: 10rem 9% 2rem;
+}
+.services h1{
+    font-size: 2.5rem;
+}
+.round-box{
+    width: 10rem;
+    height: 10rem;
+    margin-left: 180px;
+    margin-top: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%) rotate(0);
+    border-top: .2rem solid var(--second-bg-color);
+    border-bottom: .2rem solid var(--second-bg-color);
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+    animation: aboutSpinner 8s linear infinite;
+    background: var(--bg-color);
+}
+.services .cart{
+    background-color: var(--second-bg-color);
+    padding: 1rem;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.8);
+    border-radius: 8px;
+}
 
 
 .eduction{
